@@ -1,5 +1,5 @@
 driving = input('請問你有沒有開過車？： ')
-if driving != '有' and driving != '沒有':
+while driving != '有' and driving != '沒有':
 	print('只能輸入 有/沒有 喔')
 	raise SystemExit
 age = input('請問你的年齡： ')
@@ -14,5 +14,3 @@ elif driving == '沒有':
 		print('你可以去考駕照了啊')
 	else:
 		print('你再過', 18 - age, '年就可以考駕照了')
-else:
-	print('只能輸入“有”或是“沒有”喔')
